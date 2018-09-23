@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Metadata -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- Website Title -->
+  <title>Loan Calculator</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="fonts/css/all.css">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-light">
+
+  <!------------------------------------------------->
+  <!-- CALCULATOR SECTION -->
+  <!------------------------------------------------->
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 mx-auto">
+        <div class="card card-body text-center mt-5">
+          <h1 class="heading display-5 text-dark">
+            Loan Calculator
+          </h1>
+          <hr class="pb-2">
+
+          <!-- Loan Form -->
+          <form id="loan-form">
+
+            <!-- Loan Amount Field -->
+            <div class="form-group">
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">
+                    <i class="fas fa-dollar-sign"></i>
+                  </span>
+                </div>
+                <input type="number" class="form-control" id="amount" placeholder="Loan Amount">
+              </div>
+            </div>
+
+            <!-- Interest Field -->
+            <div class="form-group">
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">
+                    <i class="fas fa-percent"></i>
+                  </span>
+                </div>
+                <input type="number" class="form-control" id="interest" placeholder="Interest">
+              </div>
+            </div>
+
+            <!-- Years Field -->
+            <div class="form-group">
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">
+                    <i class="far fa-calendar-alt"></i>
+                  </span>
+                </div>
+                <input type="number" class="form-control" id="years" placeholder="Years To Repay">
+              </div>
+            </div>
+
+            <!-- Calculate Button -->
+            <div class="form-group">
+              <input type="submit" value="Calculate" class="btn btn-primary btn-block">
+            </div>
+
+          </form><!-- #/loan-form -->
+
+          <!-- Loader Section -->
+          <div id="loading">
+            <img src="img/loading.gif">
+          </div>
+
+          <!-- Results Section -->
+          <div id="results" class="pt-4 text-left">
+            <h5 class="text-dark text-center">Results</h5>
+            <ul class="list-group">
+
+              <!-- Monthly Payment -->
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Monthly Payment
+                <span class="badge badge-primary badge-pill" id="monthly-payment"></span>
+              </li>
+
+              <!-- Total Payment -->
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Total Payment
+                <span class="badge badge-primary badge-pill" id="total-payment"></span>
+              </li>
+
+              <!-- Total Interest -->
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Total Interest
+                <span class="badge badge-primary badge-pill" id="total-interest"></span>
+              </li>
+            </ul>
+
+          </div><!-- #/results -->
+        </div><!-- ./card -->
+      </div><!-- ./col-md-6 -->
+    </div><!-- ./row -->
+  </div><!-- ./container -->
+
+  <!------------------------------------------------->
+  <!-- JAVASCRIPT -->
+  <!------------------------------------------------->
+
+  <!-- JQuery JS -->
+  <script src="js/jquery-3.3.1.js"></script>
+
+  <!-- Popper JS -->
+  <script src="js/popper.js"></script>
+
+  <!-- Bootstrap JS -->
+  <script src="js/bootstrap.js"></script>
+
+  <!-- Custom Data JS -->
+  <script src="js/app.js"></script>
+
+</body>
+
+</html>

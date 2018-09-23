@@ -1,0 +1,64 @@
+/*------------------------------------------------->*/
+/*-- BASIC ELEMENT STYLING -->*/
+/*------------------------------------------------->*/
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+hr {
+  opacity: 20%;
+}
+
+/*------------------------------------------------->*/
+/*-- CARD STYLES -->*/
+/*------------------------------------------------->*/
+
+.card {
+  border-radius: 35px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.card .alert {
+  border-radius: 35px;
+}
+
+/* Button Styles */
+.btn {
+  border-radius: 50px;
+}
+
+/* Input Styles */
+.input-group .form-control {
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.input-group .input-group-text {
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+/* List Group Styles */
+.list-group {
+  border-radius: 150px;
+}
+
+span.badge {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+/* Loader Initial State */
+#loading,
+#results {
+  display: none;
+}
+
+/* Media Queries */
+@media (max-width: 991px) {
+  h1,
+  .h1 {
+    font-size: 2rem;
+  }
+}
